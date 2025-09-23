@@ -1,0 +1,38 @@
+<!-- <mat-nav-list>
+  <a mat-list-item routerLink="/followed"><i class="fa-solid fa-user-friends"></i> Followed</a>
+  <a mat-list-item routerLink="/profile"><i class="fa-solid fa-user"></i> Profile</a>
+  <a mat-list-item routerLink="/explore"><i class="fa-solid fa-star"></i> Explore</a>
+  <a mat-list-item routerLink="/new-post"><i class="fa-solid fa-plus"></i> New Post</a>
+  <a mat-list-item routerLink="/saved"><i class="fa-solid fa-bookmark"></i> Saved Posts</a>
+  <a mat-list-item routerLink="/like-posts"><i class="fa-solid fa-thumbs-up"></i> Liked Posts</a>
+</mat-nav-list> -->
+
+<nav>
+  <mat-nav-list>
+
+    <a mat-list-item routerLinkActive="active-link" routerLink="/explore">
+      <mat-icon matListItemIcon>explore</mat-icon>
+      <span matListItemTitle *ngIf="expanded">Explore</span>
+    </a>
+
+    <a mat-list-item routerLinkActive="active-link" routerLink="/followed">
+      <mat-icon matListItemIcon>group</mat-icon>
+      <span matListItemTitle *ngIf="expanded">Followed</span>
+    </a>
+
+    <a mat-list-item routerLinkActive="active-link" routerLink="/profile">
+      <mat-icon matListItemIcon>person</mat-icon>
+      <span matListItemTitle *ngIf="expanded">Profile</span>
+    </a>
+
+    <a mat-list-item routerLinkActive="active-link" routerLink="/new-post">
+      <mat-icon matListItemIcon>add_circle</mat-icon>
+      <span matListItemTitle *ngIf="expanded">New Post</span>
+    </a>
+
+    <a mat-list-item routerLinkActive="active-link" routerLink="/saved">
+      <mat-icon matListItemIcon>bookmark</mat-icon>
+      <span matListItemTitle *ngIf="expanded">Saved Posts</span>
+    </a>
+  </mat-nav-list>
+</nav>

@@ -1,0 +1,50 @@
+<!-- <mat-toolbar>
+  <button mat-icon-button aria-label="Toggle sidebar" (click)="menuToggle.emit()">
+    <mat-icon>{{ expanded ? 'menu_open' : 'menu' }}</mat-icon>
+  </button>
+
+  <span class="title">01 Blog</span>
+</mat-toolbar>
+ -->
+<!-- <mat-toolbar>
+  <button mat-icon-button aria-label="Toggle sidebar" (click)="menuToggle.emit()">
+    <mat-icon>{{ expanded ? 'menu_open' : 'menu' }}</mat-icon>
+  </button>
+
+  <span class="title">01 Blog</span>
+
+  <span class="toolbar-spacer"></span>
+
+  <button mat-icon-button aria-label="Notifications">
+    <mat-icon>notifications</mat-icon>
+    <span class="notification-badge">3</span>
+  </button>
+
+  <button mat-icon-button aria-label="Profile">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+</mat-toolbar> -->
+
+<mat-toolbar class="nav-toolbar">
+  <!-- Sidebar toggle button -->
+  <button class="burger-button" mat-icon-button aria-label="Toggle sidebar" (click)="menuToggle.emit()">
+    <mat-icon>{{ expanded ? 'menu_open' : 'menu' }}</mat-icon>
+  </button>
+
+  <span class="title">01 Blog</span>
+
+  <span class="toolbar-spacer"></span>
+
+  <!-- Profile button -->
+  <button mat-icon-button aria-label="Profile" class="profile-btn">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  
+  <!-- Notification button -->
+  <button mat-icon-button aria-label="Notifications" class="notification-btn">
+    <mat-icon>notifications</mat-icon>
+    <span class="notification-badge">3</span>
+  </button>
+
+</mat-toolbar>
+
