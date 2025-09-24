@@ -1,1 +1,47 @@
-<p>register-dialog works!</p>
+<h2 mat-dialog-title>Register</h2>
+<form [formGroup]="form" (ngSubmit)="submit()" mat-dialog-content>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" />
+    <mat-error *ngIf="form.get('email')?.hasError('email')">
+      Invalid email
+    </mat-error>
+    <mat-error *ngIf="form.get('email')?.hasError('required')">
+      Email is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Username</mat-label>
+    <input matInput formControlName="username" />
+    <mat-error *ngIf="form.get('username')?.hasError('required')">
+      Username is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" formControlName="password" />
+    <mat-error *ngIf="form.get('password')?.hasError('required')">
+      Password is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Age</mat-label>
+    <input matInput type="number" formControlName="age" />
+    <mat-error *ngIf="form.get('age')?.hasError('required')">
+      Age is required
+    </mat-error>
+    <mat-error *ngIf="form.get('age')?.hasError('min')">
+      Must be positive
+    </mat-error>
+  </mat-form-field>
+
+  <div mat-dialog-actions align="end">
+    <button mat-button type="button" (click)="cancel()">Cancel</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+      Register
+    </button>
+  </div>
+</form>

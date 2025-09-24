@@ -7,6 +7,7 @@ import { RouterLink } from '@angular/router';
 import { NgIf } from '@angular/common';
 import { LoginDialog } from '../auth/login-dialog/login-dialog';
 import { MatDialog } from '@angular/material/dialog';
+import { RegisterDialog } from '../auth/register-dialog/register-dialog';
 
 
 @Component({
@@ -22,6 +23,12 @@ export class SideBar {
   this.dialog.open(LoginDialog, { width: '350px' })
       .afterClosed().subscribe(result => {
         if (result) console.log('User logged in:', result);
-      });
-}
+  });
+  }
+  openRegister() {
+  this.dialog.open(RegisterDialog, { width: '350px' })
+      .afterClosed().subscribe(result => {
+        if (result) console.log('User logged in:', result);
+  });
+  }
 }

@@ -21,3 +21,4 @@ describe('RegisterDialog', () => {
     expect(component).toBeTruthy();
   });
 });
+

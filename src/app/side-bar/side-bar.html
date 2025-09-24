@@ -20,7 +20,7 @@
       <span matListItemTitle *ngIf="expanded">Followed</span>
     </a>
 
-    <a mat-list-item routerLinkActive="active-link" routerLink="/profile">
+    <a (click)="openRegister()" mat-list-item routerLinkActive="active-link" routerLink="/profile">
       <mat-icon matListItemIcon>person</mat-icon>
       <span matListItemTitle *ngIf="expanded">Profile</span>
     </a>

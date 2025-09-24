@@ -1,0 +1,12 @@
+*{
+    padding: 10px 0;
+    margin: auto;
+}
+
+form{
+    padding:100px;
+}
+
+mat-form-field{
+    width: 100%;
+}
