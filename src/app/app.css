@@ -6,7 +6,7 @@
 
 
 .side-bar {
-  background-color: lightcoral;
+  background-color: #aa03aa;
   width: 60px;
   transition: width 250ms ease, transform 250ms ease;
   overflow: hidden;

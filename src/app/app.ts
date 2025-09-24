@@ -4,12 +4,12 @@ import { SideBar } from './side-bar/side-bar';
 import { NavBarComponent } from './nav-bar/nav-bar';
 import {MatToolbar} from '@angular/material/toolbar'
 import { MatIconModule } from '@angular/material/icon';
-// import 
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,SideBar,NavBarComponent,MatIconModule],
+  imports: [RouterOutlet,SideBar,NavBarComponent,MatIconModule,MatDialogModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

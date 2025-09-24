@@ -15,7 +15,7 @@
       <span matListItemTitle *ngIf="expanded">Explore</span>
     </a>
 
-    <a mat-list-item routerLinkActive="active-link" routerLink="/followed">
+    <a (click)="openLogin()" mat-list-item routerLinkActive="active-link" routerLink="/followed">
       <mat-icon matListItemIcon>group</mat-icon>
       <span matListItemTitle *ngIf="expanded">Followed</span>
     </a>

@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { MatBadge } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbar } from '@angular/material/toolbar';
 // import {}
@@ -6,7 +7,7 @@ import { MatToolbar } from '@angular/material/toolbar';
 @Component({
   selector: 'app-nav-bar',
   standalone: true,
-  imports: [MatToolbar, MatIconModule],
+  imports: [MatToolbar, MatIconModule,MatBadge],
   templateUrl: './nav-bar.html',
   styleUrls: ['./nav-bar.css']
 })
